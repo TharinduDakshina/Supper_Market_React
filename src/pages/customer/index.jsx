@@ -1,21 +1,20 @@
 import {Component, Fragment} from "react";
-import Greeting from "../../components/home/greeting";
+import Customer from "../../components/customer/index";
 
-class HomePage extends Component {
+class CustomerPage extends Component {
 
 
     constructor(props) {
         super(props);
     }
 
-
     render() {
         return (<div>
                 <Fragment>
-                    <Greeting/>
+                    <Customer/>
                 </Fragment>
             </div>);
     }
 }
 
-export default HomePage;
+export default CustomerPage;

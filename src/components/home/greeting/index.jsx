@@ -5,6 +5,7 @@ import {Button, Card, CardActions, CardContent, Typography} from "@mui/material"
 import ButtonBase from '@mui/material/ButtonBase';
 import {styled} from '@mui/material/styles';
 import image1 from "../../../assets/images/supermarker1.jpg"
+import {Link} from "react-router-dom";
 
 
 class Greeting extends Component {
@@ -23,10 +24,12 @@ class Greeting extends Component {
                         </Typography>
                     </div>
                     <div className={classes.title__container_characters}>
-                        <Button variant="text"
-                                style={{marginRight: "15%", color: "black", fontSize: "1.5em"}}>Customer</Button>
 
-                        <Button variant="text" style={{color: "black", fontSize: "1.5em"}}>Item</Button>
+
+                        <Button href="Customer" style={{ marginRight: "15%",color: "black", fontSize: "1.5em"}}>Customer</Button>
+
+                        <Button href="" style={{ color: "black", fontSize: "1.5em"}}>Item</Button>
+
 
                     </div>
 
@@ -35,7 +38,7 @@ class Greeting extends Component {
                 <div className={classes.contentBody}>
                     <Card className={classes.card}>
                         <CardContent className={classes.content__card1}>
-                            <img src={image1} alt="sdas" className={classes.card_image}/>
+                            <img src={image1} alt="home_image" className={classes.card_image}/>
                         </CardContent>
                     </Card>
                 </div>
