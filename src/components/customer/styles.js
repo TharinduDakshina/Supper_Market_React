@@ -25,6 +25,10 @@ export const styleSheet={
         flexDirection:"row-reverse",
         alignItems:"center",
         margin: "18px 91px"
-
+    },
+    table_container:{
+        display:"flex",
+        flexDirection:"row-reverse",
+        alignItems:"center",
     }
 }
